@@ -4,6 +4,7 @@ import { darkTheme } from './utils/Themes.js';
 import Navbar from './components/Navbar/index.js';
 import HeroSection from './components/HeroSection/index.js';
 import Skills from './components/Skills/index.js';
+import Education from './components/Education/index.js';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -21,11 +22,14 @@ const Wrapper = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-       <Navbar />
-      <Body>
-        <HeroSection />
-        <Skills />
-      </Body>
+        <Navbar />
+        <Body>
+          <HeroSection /> 
+          <Wrapper>
+            <Skills />
+            <Education />
+          </Wrapper>
+        </Body>
     </ThemeProvider>
   );
 }
