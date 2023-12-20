@@ -2,6 +2,9 @@ import { GitHub } from '@mui/icons-material';
 import React from 'react'
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components'
+import { FaAffiliatetheme } from "react-icons/fa";
+import { FaBars } from 'react-icons/fa';
+
 
 
 const Nav = styled.div`
@@ -121,22 +124,83 @@ const GitHubButton = styled.a`
     }
 `;
 
+const Span = styled.div`
+    padding: 0 4px;
+    font-weight: bold;
+    font-size: 18px;
+`;
+
+const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 40px;
+    background: ${({ theme }) => theme.card_light+99};
+    transition: all 0.6s ease-in-out;
+    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+
+`
+
 
 export const Navbar = () => {
-  return(
-    <Nav>
-        <NavContainer>
-            <NavLogo>Logo</NavLogo>
-            <MobileIcon></MobileIcon>
-            <NavItems>
-                <NavLink>Home</NavLink>
-            </NavItems>
-            <ButtonContainer>
-                <GitHubButton>Github Profile</GitHubButton>
-            </ButtonContainer>
-        </NavContainer>
-    </Nav>
-  );
+    const [isOpen, setIsOpen] = React.useState(false);
+    const theme = useTheme()
+        return(
+            <Nav>
+                <NavContainer>
+                    <NavLogo to='/'>
+                    <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+                        <FaAffiliatetheme size="2rem" /> <Span>Portfolio</Span>
+                    </a>
+                    </NavLogo>
+                    <MobileIcon>
+                        <FaBars onClick={() => {
+                            setIsOpen(!isOpen)
+                        }} />
+                    </MobileIcon>
+                    <NavItems>
+                        <NavLink href="#about">About</NavLink>
+                        <NavLink href='#skills'>Skills</NavLink>
+                        <NavLink href='#experience'>Experience</NavLink>
+                        <NavLink href='#projects'>Projects</NavLink>
+                        <NavLink href='#education'>Education</NavLink>
+                    </NavItems>
+                    <ButtonContainer>
+                        <GitHubButton>Github Profile</GitHubButton>
+                    </ButtonContainer>
+                </NavContainer>
+                {
+                    isOpen &&
+                    <MobileMenu isOpen={isOpen}>
+                        <MobileLink href="#about" onClick={() => {
+                        setIsOpen(!isOpen)
+                        }}>About</MobileLink>
+                        <MobileLink href='#skills' onClick={() => {
+                        setIsOpen(!isOpen)
+                        }}>Skills</MobileLink>
+                        <MobileLink href='#experience' onClick={() => {
+                        setIsOpen(!isOpen)
+                        }}>Experience</MobileLink>
+                        <MobileLink href='#projects' onClick={() => {
+                        setIsOpen(!isOpen)
+                        }}>Projects</MobileLink>
+                        <MobileLink href='#education' onClick={() => {
+                        setIsOpen(!isOpen)
+                        }}>Education</MobileLink>
+                        <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+                    </MobileMenu>
+                }
+            </Nav>
+        );
 }
 
 export default Navbar
