@@ -1,15 +1,11 @@
-# Getting Started with Create React App
+# My-Portfolio
+Welcome to my portfolio! This project showcases my skills, projects, and experiences as a web developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-### `npm test`
-### `npm run build`
-### `npm run eject`
+### In the project directory, you can run:
+1. `npm start`
+2. `npm test`
+3. `npm run build`
+4. `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
