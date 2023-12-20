@@ -1,5 +1,5 @@
 # My-Portfolio
-Welcome to my portfolio! This project showcases my skills, projects, and experiences as a web developer
+Welcome to my portfolio! This project showcases my skills, projects, and experiences as a developer
 
 ### In the project directory, you can run:
 1. `npm start`
@@ -7,5 +7,5 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 3. `npm run build`
 4. `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Note: This is a one-way operation. Once you `eject`, you can't go back!**
 
