@@ -185,6 +185,4 @@ export const ResumeButton = styled.a`
     background: linear-gradient(to right, #43a049, #1996D2);
   }s
 
-
-
 `;
