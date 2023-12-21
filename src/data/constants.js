@@ -6,7 +6,7 @@ export const Bio = {
       "UI/UX Designer",
     ],
     description:
-      "Prajwol Ghimire, a dedicated software engineering student, navigates the digital realm with an avid love for PC gaming, where virtual adventures fuel his imagination. Balancing his passion for gaming with occasional coding pursuits, Prajwol intertwines creativity and technical prowess to craft a dynamic path in the ever-evolving landscape of technology.",
+      "Prajwol Ghimire, a committed software engineering student, explores the digital realm with a fervent passion for PC gaming. Balancing gaming with occasional coding pursuits, he weaves creativity and technical expertise into a dynamic journey in the evolving landscape of technology.",
     github: "https://github.com/prajwol-ghimire",
     resume:
       "",
