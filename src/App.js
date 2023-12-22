@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/index.js';
 import Skills from './components/Skills/index.js';
 import Education from './components/Education/index.js';
 import Experience from './components/Experience/index.js';
+import Projects from './components/Projects/index.js';
 import { BrowserRouter as Router } from "react-router-dom";
 
 const Body = styled.div`
@@ -31,6 +32,7 @@ function App() {
             <Wrapper>
               <Skills />
               <Experience />
+              <Projects />
               <Education />
             </Wrapper>
           </Body>
