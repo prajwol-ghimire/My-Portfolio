@@ -9,6 +9,7 @@ import Experience from './components/Experience/index.js';
 import Projects from './components/Projects/index.js';
 import { BrowserRouter as Router } from "react-router-dom";
 import ProjectDetails from "./components/ProjectDetails";
+import Contact from "./components/Contact";
 import { useState } from "react";
 
 const Body = styled.div`
@@ -41,7 +42,7 @@ function App() {
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
-            {/* <Contact /> */}
+            <Contact />
           </Wrapper>
           {/* <Footer /> */}
           {openModal.state &&

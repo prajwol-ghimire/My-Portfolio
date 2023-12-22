@@ -181,30 +181,30 @@ export const Bio = {
   export const education = [
     {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-      school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-      date: "Oct 2021 - Sep 2025",
-      grade: "8.71 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-      degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+      img: "https://th.bing.com/th/id/OIP.jnZFf1Q29W4rfDxDqQX5WAAAAA?w=152&h=136&c=7&r=0&o=5&pid=1.7",
+      school: "Nepal College of Information Technology , Laltipur, Nepal",
+      date: "2020 - Present",
+      grade: "- ",
+      desc: "Current Pursuing Bachelor's Degree in Software Engineering.",
+      degree: "Bachelor of Engineering - Software Engineering",
     },
     {
       id: 1,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2019 - Apr 2025",
-      grade: "88.2%",
-      desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-      degree: "ISC(XII), Science with Computer",
+      img: "https://th.bing.com/th/id/OIP.a-AMRijDaKD1xMzJNB0l3QHaHa?rs=1&pid=ImgDetMain",
+      school: "Liverpool International College, Kathmandu, Nepal",
+      date: "2018 - 2020",
+      grade: "3.5 GPA",
+      desc: "Completed Grade 10 From Kanjirowa National School, Kathmandu, Nepal.",
+      degree: "Board(XII), Science with Computer",
     },
     {
       id: 2,
       img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2017 - Apr 2019",
-      grade: "92.3%",
-      desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-      degree: "ICSC(X), Science with Computer",
+      school: "Kanjirowa National School, Kathmandu, Nepal",
+      date: "2005 - 2018",
+      grade: "3.3 GPA",
+      desc: "Completed Grade 10 From Kanjirowa National School, Kathmandu, Nepal.",
+      degree: "SEE(X), Computer Science",
     },
   ];
   
@@ -264,7 +264,35 @@ export const Bio = {
         },
       ]
     },
-  
+
+    {
+      id: 1,
+      title: "QBCore -PDCAM",
+      date: "24th Sep 2023 - Present",
+      description:
+        "CAM made with QbFramework for FiveM.",
+      image:
+      "https://github.com/prajwol-ghimire/qb-pdcam/blob/main/ui/cam.png?raw=true",
+      tags: [
+        "Lua",
+        "Html",
+        "CSS",
+        "Fivem Native",
+        "Javascripts",
+        "AJAX",
+      ],
+      category: "CFX Projects",
+      github: "https://github.com/prajwol-ghimire/qb-pdcam",
+      webapp: "https://github.com/prajwol-ghimire/qb-pdcam",
+      member: [
+        {
+          name: "Prajwol Ghimire",
+          img: "https://avatars.githubusercontent.com/u/51044128?s=400&u=29c537bb961007d1b2175b5633b8325f2f6f00bc&v=4",
+          linkedin: "https://www.linkedin.com/in/prajwol-ghimire-37aa3516b/",
+          github: "https://github.com/prajwol-ghimire/",
+        },
+      ]
+    },  
   ];
   
   export const TimeLineData = [

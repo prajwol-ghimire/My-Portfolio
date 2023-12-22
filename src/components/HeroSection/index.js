@@ -5,6 +5,7 @@ import HeroImg from '../../images/prajwol.png'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 
+
 const HeroSection = () => {
     return (
         <div id="about">
