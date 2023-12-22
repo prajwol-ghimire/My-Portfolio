@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroBgAnimation from '../HeroBgAnim'
-import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle,SocialMediaIcons,SocialMediaIcon, ResumeButton } from './HeroStyles.js'
+import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, ResumeButton } from './HeroStyles.js'
 import HeroImg from '../../images/prajwol.png'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';

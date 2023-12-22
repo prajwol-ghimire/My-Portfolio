@@ -1,6 +1,6 @@
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from './utils/Themes.js';
+import { darkTheme, lightTheme } from './utils/Themes.js'
 import Navbar from './components/Navbar/index.js';
 import HeroSection from './components/HeroSection/index.js';
 import Skills from './components/Skills/index.js';
@@ -8,6 +8,8 @@ import Education from './components/Education/index.js';
 import Experience from './components/Experience/index.js';
 import Projects from './components/Projects/index.js';
 import { BrowserRouter as Router } from "react-router-dom";
+import ProjectDetails from "./components/ProjectDetails";
+import { useState } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -23,20 +25,30 @@ const Wrapper = styled.div`
 `
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal)
   return (
-    <ThemeProvider theme={darkTheme}>
-        <Router>
-          <Navbar />
-          <Body>
-            <HeroSection /> 
-            <Wrapper>
-              <Skills />
-              <Experience />
-              <Projects />
-              <Education />
-            </Wrapper>
-          </Body>
-        </Router>  
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router >
+        <Navbar />
+        <Body>
+          <HeroSection />
+          <Wrapper>
+            <Skills />
+            <Experience />
+          </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+            {/* <Contact /> */}
+          </Wrapper>
+          {/* <Footer /> */}
+          {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
+        </Body>
+      </Router>
     </ThemeProvider>
   );
 }
