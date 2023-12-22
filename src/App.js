@@ -11,7 +11,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ProjectDetails from "./components/ProjectDetails";
 import Contact from "./components/Contact";
 import { useState } from "react";
-import About from './components/About/index.js';
+import Footer from './components/Footer/index.js';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -45,8 +45,7 @@ function App() {
             <Education />
             <Contact />
           </Wrapper>
-                <About />
-          {/* <Footer /> */}
+          <Footer />
           {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           }
