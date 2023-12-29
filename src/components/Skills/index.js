@@ -21,6 +21,7 @@ const Skills = () => {
                   <SkillItem>
                     <SkillImage src={item.image}/>
                     {item.name}
+                    
                   </SkillItem>
                 ))}
               </SkillList>
