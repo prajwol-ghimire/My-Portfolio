@@ -1,30 +1,30 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
-@media (max-width: 960px) {
-    padding: 0px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  @media (max-width: 960px) {
+      padding: 0px;
+  }
 `
 
 export const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1350px;
-padding: 0px 0px 80px 0px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1350px;
+  padding: 0px 0px 80px 0px;
+  gap: 12px;
+  @media (max-width: 960px) {
+      flex-direction: column;
+  }
 `
 
 export const Title = styled.div`
