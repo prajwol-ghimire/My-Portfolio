@@ -199,7 +199,7 @@ export const Bio = {
     },
     {
       id: 2,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+      img: "https://kanjisl.edu.np/images/kanirow-nationl-school.png",
       school: "Kanjirowa National School, Kathmandu, Nepal",
       date: "2005 - 2018",
       grade: "3.3 GPA",
